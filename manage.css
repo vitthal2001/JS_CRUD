@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 0px 100px;
+    background-color: #e5e4e4;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: segoe UI;
+    row-gap: 30px;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+button {
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    background-color: skyblue;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-left: 2px solid #e5e4e4;
+    border-right: 2px solid #e5e4e4;
+    height: 40px;
+}
+
+th {
+    background-color: skyblue;
+    color: black;
+}
+
+td {
+    text-indent: 20px;
+}
+
+.view {
+    color: blue;
+}
+
+.delete {
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/* modal css  */
+
+.main-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 50%;
+    max-height: 50vh;
+    padding: 30px 20px;
+    background-color: white;
+    position: relative;
+    font-family: segoe UI;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 30px;
+
+}
+
+.modal-content {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.modal-content:hover>.details {
+    margin-top: -300px;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 30px;
+    color: black;
+}
+
+.img {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .3s;
+    background-color: skyblue;
+
+
+}
+
+.modal-img {
+    width: 100%;
+}
+
+.details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+    background-color: white;
+    margin-top: -70px;
+    z-index: 200;
+    position: relative;
+    transition: .30s;
+    padding: 20px;
+
+}
